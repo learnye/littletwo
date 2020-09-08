@@ -1,0 +1,117 @@
+/* pages/user/user.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.user{
+  width: 100%;
+  height: 240rpx;
+  background-color: #ff3366;
+}
+.user .login_btn{
+  /* margin-top: 80rpx; */
+  position: relative;
+  top: 80rpx;
+  width: 300rpx;
+}
+.message{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 40rpx;
+  margin: auto 20rpx;
+}
+.message .img{
+  flex: 30%;
+  text-align: right;
+}
+.message image{
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+}
+.message .name{
+  flex: 70%;
+  color: #fff;
+}
+.name{
+  display: flex;
+  flex-direction: column;
+}
+.name text:nth-child(1){
+  font-size: 40rpx;
+}
+.name text:nth-child(2){
+  font-size: 20rpx;
+}
+
+.goodlist{
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  position: absolute;
+  top: 200rpx;
+  left: 20rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0rpx 10rpx 20rpx #ccc;
+}
+.goodlist .icon_message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon_message image{
+  width: 60rpx;
+  height:60rpx;
+  margin-top: 20rpx;
+}
+.icon_message text{
+  font-size: 25rpx;
+  margin: 10rpx 0;
+}
+
+/* 管理样式 */
+.manage{
+  background-color: #fff;
+  margin-top: 132rpx;
+}
+.manage_title{
+  height: 85rpx;
+  border-bottom: 2rpx solid #F2F2F2 ;
+  
+}
+.manage_title text{
+  line-height: 90rpx;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+}
+.manage>view{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 86rpx;
+}
+.manage image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+
+}
+.manage text{
+  font-size: 25rpx;
+}
+.manage>view:not(:nth-child(1))::after{
+  position: absolute;
+  right: 30rpx;
+  top: 35rpx;
+  content: '';
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #7f7f7f;
+  border-right: 4rpx solid #7f7f7f;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

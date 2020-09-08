@@ -1,0 +1,61 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+	<view class="user">
+		<view wx:if="{{userData.length==0}}">
+			<button class="login_btn" size="small" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+		</view>
+		<view wx:else class="message">
+      <view class="name">
+        <text>{{userData.nickName}}</text>
+        <text>这个人懒死了什么都没写</text>
+      </view>
+      <view class="img">
+        <image src="{{userData.avatarUrl}}"></image>
+      </view>
+      
+    </view>
+	</view>
+  <view class="goodlist">
+    <view class="icon_message">
+      <image src="../../images/allorder.png"></image>
+      <text>全部订单</text>
+    </view>
+    <view class="icon_message">
+      <image src="../../images/pay.png"></image>
+      <text>代付款</text>
+    </view>
+    <view class="icon_message">
+      <image src="../../images/receive.png"></image>
+      <text>待收货</text>
+    </view>
+    <view class="icon_message">
+      <image src="../../images/talk.png"></image>
+      <text>待评价</text>
+    </view>
+  </view>
+  <view class="manage">
+    <view class="manage_title">
+      <text>常用功能</text>
+    </view>
+    <view class="address">
+      <image src="../../images/address.png"></image>
+      <text>地址管理</text>
+    </view>
+    <view class="discount">
+      <image src="../../images/discount.png"></image>
+      <text>优惠卷</text>
+    </view>
+    <view class="kf">
+      <image src="../../images/kf1.png"></image>
+      <text>客服</text>
+    </view>
+    <view class="advice">
+      <image src="../../images/advice.png"></image>
+      <text>反馈建议</text>
+    </view>
+    <view class="setting">
+      <image src="../../images/setting.png"></image>
+      <text>设置</text>
+    </view>
+  </view> 
+</view>

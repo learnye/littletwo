@@ -1,0 +1,49 @@
+<wxs module="filters" src="../../utils/filters.wxs"></wxs>
+<view class="container">
+	<view class="swiper">
+		<swiper autoplay="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#ff4500" circular="true">
+			<swiper-item wx:for="{{swipers}}" wx:key="key">
+				<image src="{{item}}"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view>
+		<text class="commandtext">推荐手办</text>
+		<view class='content'>
+			<view class='left'>
+				<block wx:for="{{leftList}}" wx:key="index">
+					<navigator url="/pages/detail/detail?id={{item.Pid}}">
+						<view class="lview">
+							<image lazy-load="true" class='pic' src='{{item.Pimage}}'></image>
+							<text>{{item.Pname}}</text>
+							<view class="view_bottom">
+								<text class="price">￥{{filters.toFix(item.price)}}</text>
+								<text class="like">{{item.Plike}}人想要</text>
+							</view>
+						</view>
+					</navigator>
+				</block>
+				<block>
+					<image class="pic" src="cloud://test-za1ea.7465-test-za1ea-1301302580/images/banner2_m.png" style="height:240rpx"></image>
+				</block>
+			</view>
+			<view class='right'>
+				<block>
+					<image class="pic" src="cloud://test-za1ea.7465-test-za1ea-1301302580/images/banner3_m.png" style="height:240rpx; margin-bottom:15rpx;"></image>
+				</block>
+				<block wx:for="{{rightList}}" wx:key="index">
+					<navigator url="/pages/detail/detail?id={{item.Pid}}">
+						<view class="lview">
+							<image lazy-load="true" class='pic' src='{{item.Pimage}}'></image>
+							<text>{{item.Pname}}</text>
+							<view class="view_bottom">
+								<text class="price">￥{{filters.toFix(item.price)}}</text>
+								<text class="like">{{item.Plike}}人想要</text>
+							</view>
+						</view>
+					</navigator>
+				</block>
+			</view>
+		</view>
+	</view>
+</view>

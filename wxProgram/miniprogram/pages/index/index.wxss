@@ -1,0 +1,54 @@
+.swiper image{
+  width:750rpx;
+  height:316rpx;
+}
+page{
+  width: 100%;
+  margin: 0;
+  background: #F2F2F2;
+}
+.commandtext{
+  margin-left: 20rpx;
+  font-size: small;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  overflow: hidden;
+}
+
+.left{
+  width: 345rpx;
+}
+
+.right{
+  width: 345rpx;
+  margin-left: 20rpx;
+}
+
+.pic{
+  /* border-radius: 10rpx; */
+  width: 345rpx;
+  height: 400rpx;
+}
+.lview{
+  border-radius: 10rpx;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: small;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.10);
+  margin-bottom: 20rpx;
+}
+.view_bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.view_bottom .price{
+  color: #ff3366;
+}
+.view_bottom .like{
+  font-size: smaller;
+  color: #ccc;
+}
